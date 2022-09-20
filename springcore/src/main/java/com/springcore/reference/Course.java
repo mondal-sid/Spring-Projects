@@ -20,12 +20,5 @@ public class Course {
         this.cName = cName;
     }
 
-    public Course() {
-    }
-
-    @Override
-    public String toString() {
-        return "Course [cName=" + cName + ", cid=" + cid + "]";
-    }
     
 }

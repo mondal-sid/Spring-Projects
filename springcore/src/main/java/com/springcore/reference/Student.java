@@ -10,24 +10,14 @@ public class Student {
     public void setRoll(int roll) {
         this.roll = roll;
     }
-    public String getName() {
-        return name;
-    }
     public void setName(String name) {
         this.name = name;
-    }
-    public Course getCourse() {
-        return course;
     }
     public void setCourse(Course course) {
         this.course = course;
     }
-    public Student() {
-    }
-    @Override
-    public String toString() {
-        return "Student [course=" + course + ", name=" + name + ", roll=" + roll + "]";
-    }
 
-    
+    public void getDetails(){
+        System.out.println("name : "+ name + " roll no : "+ roll + " course id: "+ course.getCid() + " course name : "+course.getcName());
+    }
 }
