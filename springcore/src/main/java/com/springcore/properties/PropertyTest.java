@@ -11,10 +11,9 @@ public class PropertyTest {
     }
 
     public void printData(){
-        Set keys = driver.keySet();
+        Set<?> keys = driver.keySet();
         for (Object key : keys) {
             System.out.println(key + " : "+ driver.getProperty(key.toString()));
         }
-    }
-    
+    }    
 }
