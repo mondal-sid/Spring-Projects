@@ -11,7 +11,6 @@ public class PaymentProcessorUsingInterface {
 
     // using constrator
 
-    
     public PaymentProcessorUsingInterface(CardPayment cardPayment) {
         this.cardPayment = cardPayment;
     }

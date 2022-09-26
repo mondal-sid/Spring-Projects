@@ -9,7 +9,6 @@ public class MainUsingInterface {
        // payment.setCardPayment(new CreditCardPayment());
 
     // injecting dependent object into target object using constractor injection
-
     PaymentProcessorUsingInterface payment = new PaymentProcessorUsingInterface(new ZetaCardPayment());
 
         payment.doPayment(1234.56);
