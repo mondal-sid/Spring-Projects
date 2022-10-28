@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+    "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+    <!-- programable approch -->
+<beans>
+<!-- <bean id="t" class="com.springcore.BeanLifeCycle.programable.Test">
+    <property name="driver" value="com.mysql.cj.jdbc.Driver"></property>
+    <property name="url" value="jdbc:mysql://localhost:3306/owndb"></property>
+    <property name="username" value="root"></property>
+    <property name="password" value="9800"></property>
+</bean> -->
+
+    <!-- declarative xml approch -->
+
+    <!-- <bean id="t" class="com.springcore.BeanLifeCycle.declarativeapprch.Test" init-method="conInit" destroy-method="conCleanup">
+        <property name="driver" value="com.mysql.cj.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/owndb"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="9800"></property>
+    </bean> -->
+
+
+    <!-- annotation approch -->
+
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
+    <bean id="t" class="com.springcore.BeanLifeCycle.annotation">
+        <property name="driver" value="com.mysql.cj.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/owndb"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="9800"></property>
+    </bean>
+</beans>
