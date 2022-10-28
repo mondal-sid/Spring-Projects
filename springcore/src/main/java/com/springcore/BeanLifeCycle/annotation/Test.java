@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 public class Test{
-
+        // edited
     private String driver, url, username, password;
     private Connection con;
     public void setDriver(String driver) {
