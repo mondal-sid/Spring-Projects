@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+    "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    <bean id="b" class="com.springcore.MethodReplace.Bank">
+        <replaced-method name="calculateInt" replacer="nc"/>
+    </bean>
+    <bean id="nc" class="com.springcore.MethodReplace.NewCalInt"></bean>
+</beans>

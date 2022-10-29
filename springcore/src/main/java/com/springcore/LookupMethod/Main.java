@@ -12,5 +12,8 @@ public class Main {
         Bus b = (Bus) ap.getBean("b");
         System.out.println("--------------- Bus ----------------");
         System.out.println(b.myBusEngine().getName());
+        Truck t = (Truck) ap.getBean("t");
+        System.out.println("--------------- Truck ----------------");
+        System.out.println(t.myTruckEngine().getName());
     }
 }
